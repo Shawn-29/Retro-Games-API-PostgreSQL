@@ -1,0 +1,32 @@
+{
+	"name": "react-game-site-api-postgre",
+	"version": "1.0.0",
+	"description": "\"REST API to retrieve game data from  Retro Games database.\"",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node app.js",
+		"dev": "nodemon app.js"
+	},
+	"keywords": [
+		"REST API",
+		"postgreSQL",
+		"retro games API"
+	],
+	"author": "Shawn-29",
+	"license": "ISC",
+	"dependencies": {
+		"compression": "^1.7.4",
+		"dotenv": "^16.3.1",
+		"express": "^4.18.2",
+		"express-rate-limit": "^6.7.0",
+		"helmet": "^6.2.0",
+		"http-status-codes": "^2.2.0",
+		"node-cache": "^5.1.2",
+		"pg": "^8.11.0",
+		"pg-format": "^1.0.4"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.22"
+	}
+}
