@@ -282,11 +282,11 @@ const getGames = async (req, res) => {
             })),
             developers: result[3].map(data => ({
                 ...data,
-                filterApplied: data.count > 0 && tblFilters.developers.values.includes(data.name.toLowerCase())
+                filterApplied: data.count > 0 && tblFilters.developers.values.includes(data.name)
             })),
             genres: result[4].map(data => ({
                 ...data,
-                filterApplied: data.count > 0 && tblFilters.genres.values.includes(data.name.toLowerCase())
+                filterApplied: data.count > 0 && tblFilters.genres.values.includes(data.name)
             })),
             releaseYears: result[5].map(data => ({
                 ...data,
